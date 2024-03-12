@@ -8,6 +8,9 @@
   body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
   }
   img, picture, video, canvas, svg {
     display: block;
@@ -29,6 +32,7 @@
     height: 100vh;
     background-image: url('./imgs/background.avif');
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .blur-overlay {
@@ -44,15 +48,20 @@
 .container {
     display: flex;
     flex-direction: row;
-    gap: 8rem
+    gap: 10rem
 }
 
 .apps-container {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 4rem;
     justify-content: center;
     align-items: center;
+}
+
+.logo-container {
+    max-height: 100px;
+    max-width: 100px;
 }
 
 .apps-container span {
@@ -82,19 +91,20 @@
 
 .qr-container {
     width: 100%;
-    max-height: 200px
+    max-height: 200px;
+    padding-top: 12px;
 }
 
 .qr-img{
     width: 100%;
-    height: 160px
+    height: 160px;
 
 }
 
 .login-container {
     padding: 2rem;
     min-width: 450px;
-    min-height: 600px;
+    height: fit-content;
     border-radius: 1rem;
     background-color: white;
     -webkit-box-shadow: 1px 9px 33px 9px rgba(0,0,0,0.51);
@@ -102,13 +112,8 @@
     box-shadow: 1px 9px 33px 9px rgba(0,0,0,0.51);
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    justify-content: space-between;
+    gap: 10px;
     align-items: center;
-}
-
-.login-logo-container {
-
 }
 
 .helpdesk {
@@ -123,8 +128,9 @@
 form {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
     width: 100%;
+    padding: 1.5rem 0;
 }
 
 .input-container {
@@ -136,7 +142,8 @@ form {
 
 input {
     padding: 8px;
-    border-radius: 5px;
+    border-radius: 3px;
+    border: 2px solid rgb(185, 184, 184)
 }
 
 button {
@@ -146,6 +153,9 @@ button {
     padding: 8px 0;
     border-radius: 5px;
     text-transform: uppercase;
+    font-weight: 600;
+    font-style: bold;
+    cursor: pointer;
 }
 
 .login-bottom {
@@ -157,6 +167,89 @@ button {
     color: grey;
 }
 
-.login-bottom a {
+.login-bottom .for-clients{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     color: grey;
+    text-decoration: none;
+}
+
+a {
+    color: grey
+}
+
+@media screen and (max-width: 600px) {
+    .main{
+        width: 100%;
+        height: 100%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 3rem;
+        padding-top: 3rem;
+    }
+
+    .login-container {
+        min-width: 300px;
+        width: 300px;
+        margin: 10px;
+        padding: 15px
+    }
+
+    .app-wrapper {
+        gap: 2rem;
+    }
+
+    .apps-container {
+        gap: 5rem;
+        padding-bottom: 1rem;
+        width: 370px;
+    }
+
+    .app-wrapper {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1120px) and (min-width: 1020px) {
+    .container {
+        gap: 3rem;
+    }    
+}
+
+@media screen and (max-width: 1020px) and (min-width: 600px) {
+    .main {
+        width: 100%;
+        height: 100%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 3rem;
+        padding-top: 3rem;
+    }
+
+    .login-container {
+        min-width: 550px;
+        width: 550px;
+        padding: 20px
+    }
+
+    .app-wrapper {
+        gap: 2rem;
+    }
+
+    .apps-container {
+        gap: 5rem;
+        padding-bottom: 1rem;
+        width: 370px;
+    }
 }

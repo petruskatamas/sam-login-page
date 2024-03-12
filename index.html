@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="main.css" rel="stylesheet" />    
+    <link href="main.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">    
     <title>SAM - LOGIN</title>
 </head>
 <body class='main'>
@@ -11,31 +14,31 @@
         <div class="container">
             <div class="apps-container">
                 <div class="logo-container">
-
+                    <img src="./imgs/sam-logo-small.png"/>
                 </div>
                 <div class="app-wrapper">
-                    <div class="app-card">
+                    <a href="https://apps.apple.com/hu/app/sam/id6450101726?l=hu" class="app-card">
                         <div>
-                            apple store
+                            <img src="./imgs/app-store.png"/>
                         </div>
                         <div class="qr-container">
                             <img src="./imgs/apple-sam-qr.png" class="qr-img"/>
                         </div>
-                    </div>
-                    <div class="app-card">
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=io.ionic.samapp&pli=1" class="app-card">
                         <div>
-                            android store
+                            <img src="./imgs/robot.png"/>
                         </div>
                         <div class="qr-container">
                             <img src="./imgs/android-sam-qr.png" class="qr-img"/>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <span>Töltse le alkalmazásunkat okoseszközére!</span>
             </div>
             <div class="login-container">
                 <div class="login-logo-container">
-                    simple accounting management
+                    <img src="./imgs/sam-logo-text.png"/>
                 </div>
                 <div class="helpdesk">
                     <span>HelpDesk:</span>
@@ -57,10 +60,11 @@
                     <button>Bejelentkezés</button>
                 </form>
                 <div class="login-bottom">
-                    <a class="for-clients">
+                    <a href="/" class="for-clients">
+                        <img src="./imgs/document.png"/>
                         <span>Segédlet az ügyfeleknek</span>
                     </a>
-                    <a href="/">Elfelejtett jelszó</a>
+                    <a href="/" class="forgot-password">Elfelejtett jelszó</a>
                 </div>
             </div>
         </div>
