@@ -30,7 +30,7 @@
 .main {
     width: 100%;
     height: 100vh;
-    background-image: url('./imgs/background.avif');
+    background-image: url('./imgs/bg.webp');
     background-size: cover;
     background-repeat: no-repeat;
 }
